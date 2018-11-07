@@ -9,3 +9,6 @@ C:\Users\320027357\Workspace\Microsoft Visual Studio 2017\source\repos\DocumentG
 C:\Users\320027357\Workspace\Microsoft Visual Studio 2017\source\repos\DocumentGenerator\DocumentGenerator.FeatureSpec\bin\Debug\DocumentGenerator.Utilities.pdb
 C:\Users\320027357\Workspace\Microsoft Visual Studio 2017\source\repos\DocumentGenerator\DocumentGenerator.FeatureSpec\obj\Debug\DocumentGenerator.FeatureSpec.csproj.CopyComplete
 C:\Users\320027357\Workspace\Microsoft Visual Studio 2017\source\repos\DocumentGenerator\DocumentGenerator.FeatureSpec\bin\Debug\Xceed.Words.NET.dll
+C:\Users\320027357\Workspace\Microsoft Visual Studio 2017\source\repos\DocumentGenerator\DocumentGenerator.FeatureSpec\bin\Debug\Gherkin.dll
+C:\Users\320027357\Workspace\Microsoft Visual Studio 2017\source\repos\DocumentGenerator\DocumentGenerator.FeatureSpec\bin\Debug\Newtonsoft.Json.dll
+C:\Users\320027357\Workspace\Microsoft Visual Studio 2017\source\repos\DocumentGenerator\DocumentGenerator.FeatureSpec\bin\Debug\Newtonsoft.Json.xml

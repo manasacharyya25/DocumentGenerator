@@ -10,6 +10,9 @@ namespace DocumentGenerator.FeatureSpec
 {
     class Program
     {
+        public static string inputDir;
+        public static string outputDir;
+
         static void Main(string[] args)
         {
             try
@@ -23,38 +26,40 @@ namespace DocumentGenerator.FeatureSpec
             }
 
             //Set Variables for Input and Output Directories
-            string inputDir = args[0];
-            string outputDir = args[1];
+            Program.inputDir = args[0];
+            Program.outputDir = args[1];
 
-            //Traverse The Input Directory to Get a List of Gherkin Scripts for Each Feature Directory : One Feature Per Iteration
-            string[] Features = System.IO.Directory.GetDirectories(inputDir);
+            //Get All Gherkin Scripts Feature Wise : Dictionary{Feature:[gH1,gH2,..],...}
+            Dictionary<string, string[]> FeatureTree = DirectoryHandler.GetAllGherkinScripts(inputDir);
 
-            foreach(var feature in Features)
+            //Loop through the Dict and Generate FS for each Feature
+            foreach(var dictionaryItem in FeatureTree)
             {
-                //----Generate the Document
-                //----------Get feature Name
-                string featureFileName = outputDir + feature.Substring(feature.LastIndexOf(@"\"))+".docx";
-                var doc = DocX.Create(featureFileName);
-
-                string[] FeatureRequirements = System.IO.Directory.GetFiles(feature);
-                
-
-                foreach(var gherkinScript in FeatureRequirements)
-                {
-                    //--------------Parse each Gherkin Script
-                    var gherkinFeature = GherkinParserHandler.GetFeature(gherkinScript);
-
-                    GenerateFSDocument(gherkinFeature,doc);
-                }
-
+                GenerateFS(dictionaryItem);
             }
 
+            
 
-            
-            
+
+
+
             //--------------Populate Contents into Document
             //--------------Save Document
             //Move to Next Feature Directory
+        }
+
+        private static void GenerateFS(KeyValuePair<string, string[]> dItem)
+        {
+            var doc = DocX.Create(Program.outputDir + dItem.Key + ".docx");
+           
+            foreach(string gherkinScript in dItem.Value)
+            {
+                
+            }
+
+            
+
+            Console.ReadLine();
         }
     }
 }
