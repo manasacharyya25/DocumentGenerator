@@ -11,13 +11,13 @@ namespace DocumentGenerator.Utilities
 {
     public class GherkinParserHandler
     {
-        public static  GherkinDocument GetFeature(string gherkinScript)
+        public static  Feature GetFeature(string gherkinScript)
         {
             Parser p = new Parser();
             TextReader gherkinReader = File.OpenText(gherkinScript);
             var feature = p.Parse(gherkinReader);
 
-            return feature;
+            return feature.Feature;
         }
 
     }

@@ -8,3 +8,4 @@ C:\Users\320027357\Workspace\Microsoft Visual Studio 2017\source\repos\DocumentG
 C:\Users\320027357\Workspace\Microsoft Visual Studio 2017\source\repos\DocumentGenerator\DocumentGenerator.Utilities\bin\Debug\Newtonsoft.Json.xml
 C:\Users\320027357\Workspace\Microsoft Visual Studio 2017\source\repos\DocumentGenerator\DocumentGenerator.Utilities\obj\Debug\DocumentGenerator.Utilities.csprojAssemblyReference.cache
 C:\Users\320027357\Workspace\Microsoft Visual Studio 2017\source\repos\DocumentGenerator\DocumentGenerator.Utilities\obj\Debug\DocumentGenerator.Utilities.csproj.CopyComplete
+C:\Users\320027357\Workspace\Microsoft Visual Studio 2017\source\repos\DocumentGenerator\DocumentGenerator.Utilities\bin\Debug\Xceed.Words.NET.dll
